@@ -11,7 +11,7 @@
     text-align: center;
 }
 .nav li{
-    display: inline-block;
+    display: inline-block; /*Es una fusion de block e inline, lo mejor de ambos mundos, este elemento si le puedo agregar el margin y padding arriba y abajo y manejar el width y el hight, y hace que ocupen el 100% del tamaño del contenido y si hay espacio permite que otros hermanos puedan ponerse al lado de ellos*/
     font-size: 20px;
     margin: 10px 0;
     padding-left: 20px;

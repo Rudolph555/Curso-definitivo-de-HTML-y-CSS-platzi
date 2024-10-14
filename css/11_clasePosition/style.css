@@ -18,9 +18,10 @@
 
 #five{
     background-color: violet;
-    position: absolute; /*absolute: pierde la posicion y se sobrepone delante de todo*/
+    position: absolute; /*absolute: pierde la posicion y se retira del flujo normal del documento. Esto significa que no afecta a la posición de otros elementos, ni los otros elementos lo afectan a él. Los elementos alrededor actúan como si no estuviera allí.*/
     width: 300px;
     height: 200px;
+    top: 50px;
     left: 200px;
 
 }

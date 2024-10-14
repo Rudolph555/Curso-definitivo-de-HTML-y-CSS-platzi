@@ -14,14 +14,18 @@
         <p class="parrafo">Soy texto</p>
         <p class="parrafo">Soy texto</p>
     </div>
-    <span>Soy una etiqueta span</span>
+    <!--Estas etiquetas tienen un display block, utilizan todo el width de la pantalla sin importar el contenido-->
+    
+    <span>Soy una etiqueta span</span> <!--Esta etiqueta utiliza display inline, lo que hace es que simplemente va a utilizar el espacio que tenga su contenido y si queda espacio despues va a permitir que otras etiquetas o más contenidos se pongan delante de esto-->
     <span>Soy una etiqueta span</span>
 
+    <!--Importante: los elementos "inline" no puedo utlizar el margin y padding en la parte de arriba o abajo, se podria en la parte de izquierda o derecha, tampoco se le puede dar un width o hight-->
     <ul class="nav">
         <li>Home</li>
         <li>Cursos</li>
         <li>Instructores</li>
         <li>Blog</li>
+        <!--las <li> tienen un display distinto que viene por defecto llamado: list-item, quiere decir que son solamente elementos en una lista y estos deben venir de arriba a abajo en forma vertical, ademas se comporta como un elemento block, tiene espacio adelante o despues pero no permite que sus hermanos u otros ocupen ese espacio-->
     </ul>
 </body>
 </html>
