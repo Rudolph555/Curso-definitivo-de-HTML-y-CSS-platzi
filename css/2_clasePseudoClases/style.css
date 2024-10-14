@@ -1,0 +1,29 @@
+.main-nav{
+    margin-top: 10px;
+    list-style: none; /*quitar los bullets (iconos o marcas) de las listas desordenadas*/
+    padding-left: 0px; /*modificar el espacio interno de un elemento*/
+    background-color: #13a4a4; /*color de fondo*/
+}
+.main-nav__item{
+    display: inline-block;  /*para mostrar los elementos en linea*/
+}
+.main-nav__item a{
+    color: white; /*color del texto*/
+    padding: 5px;   /*modificar el espacio interno*/
+    border-radius: 10px; /*para redondear el borde de los elementos*/
+    text-decoration: none;  /*para quitar el subrayado del texto*/
+    background-color: green;
+}
+
+/*pseudoclases: define el estilo de un estado especial de un elemento */
+.main-nav__item a:hover{ /*hover: efecto o estado cuando el mouse esta encima del elemento*/
+    color: blue;
+}
+.main-nav__item a:active{ /*active: efecto o estado cuando le doy clic al elemento i.e. esta activo*/
+    color: red;
+}
+
+/*pseudoelemento: define el estilo de una parte especifica de un elemento*/
+.main-nav__item a::after{ /*after: despues del elemento 'ancla'*/
+    content: " | "; /*content: agregale este contenido*/
+}

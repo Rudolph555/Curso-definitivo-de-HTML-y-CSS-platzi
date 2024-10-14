@@ -1,0 +1,18 @@
+/* FORMAS DE LLAMAR ETIQUETAS PARA AGREGARLES ESTILOS: */
+
+/*1ra forma: por el nombre de la etiqueta  */
+p{      
+   color: green; 
+   font-style: italic;
+}
+
+/*2da forma: selector por class  */
+.parrafo{
+    color: blue;
+}
+
+/*3ra forma: selector por id  */
+#texto{
+    color: yellow;
+    font-size: 24px;
+}

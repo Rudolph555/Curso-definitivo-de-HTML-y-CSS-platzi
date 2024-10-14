@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <main>
+        <section>
+            <video  controls preload="auto"> <!--el # al final dentro del src al final me indica el minuto de inicio y final de reproduccion-->
+               <source src="./PandaBambu.mp4#t=1,2"><!--la etiqueta source me permite tener una lista de fuentes con diferentes formatos de los cuales el navegador elegira el q reconozca y pueda renderizar, respetando el orden. NOTA: al usar esta etiqueta src debe extraerse de la etiqueta video-->
+               
+            </video><!--controls: etiqueta de una sola palabra para ver los controles,  preload: etiqueta para que el video se empiece a renderizar al abrir la pagina-->
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    border: 2px black dotted; /*dotted: para ver el borde punteado*/
+    display: inline-block;
+}
+.box{
+    display: inline-block;
+    background-color: red;
+    width: 300px;
+    height: 200px;
+}
+/*Por defecto todos los elementos vienen en posicion static, en esta posicion no se puede usar bottom, top, left ni right*/
+
+
+#five{
+    background-color: violet;
+    position: absolute; /*absolute: pierde la posicion y se sobrepone delante de todo*/
+    width: 300px;
+    height: 200px;
+    left: 200px;
+
+}
+#three{
+    background-color: blue;
+    position: relative; /*relative: mantiene su posicion y tmb ya se puede manipular*/
+    bottom: 50px;
+}
+#one{
+    background-color: aqua; 
+    position: fixed;    /*fixed: se salta todo el contenido de la web y toma como referencia los marcos del navegador, ni el doucumento, ni el body sino el navegador, lo que logramos es que cada vez que hagamos escroll el elemento que tenga el position: fixed no se mueva*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*nos ayuda a centrar el elemento pues el top y left tomaria la parte superior isquierda como referencia*/
+
+}
+#two{
+    background-color: green;
+    position: sticky; /*sticky: El elemento puede estar debajo de otros elementos pero al hacer scroll y llegar al elemento, este se quedara en la parte de arriba como si tuviera position fixed*/
+    top: 0;
+    left: 30px;
+}

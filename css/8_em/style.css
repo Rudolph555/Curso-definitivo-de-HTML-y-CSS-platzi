@@ -1,0 +1,10 @@
+/*em: va a tomar la medida del padre directo*/
+body{
+    font-size: 20px;
+}
+.text-container{
+    font-size: 1.5em; /*aqui tendria el valor de 30px = 20*1.5 porque es el font-size de body es 20 */
+}
+.text-container div{
+    font-size: 1.5em; /*aqui ya tendria el valor de 45px para el primer p dentro de div y se ura sumando exponencialmente en los p posteriores tomando la medida de 1.5 del padre directo*/
+}

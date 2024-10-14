@@ -1,0 +1,15 @@
+/*rem: siempre va a tener referencia al estilo que tenga la etiqueta root o el root de nuestro proyecto que en nuestro caso es html y como sabemos el navegador le agrega a html el font-size de 16 px, asi que siempre 1rem = 16px*/
+*{
+    box-sizing: border-box; /*el padding y el borde se incluyen en el cálculo del ancho y alto del elemento asi suman un 100% cuando utilizas width*/
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%; /*seteamos una dimension de fuente de 62.5 de html para que luego cada rem valga igual en pixeles i.e.: 1.5rem = 15px, 3rem = 30px, ...*/
+}
+p{
+    font-size: 1.6rem;
+}
+main div{
+    font-size: 1.6rem;
+}

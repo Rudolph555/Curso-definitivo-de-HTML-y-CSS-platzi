@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <main>
+    <!-- 1ra FORMA de generar un formulario lista para seleccionar entre opciones -->
+        <select name="cursos" id="cursos"><!-- select:etiqueta para crear menus desplegables  -->
+            <option value="JavaScript">JavaScript</option> <!--value: debe tener el mismo nombre que el texto que se muestra pues es lo que se enviara a la BD-->
+            <option value="HTML5">HTML5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Web Standars">Web Standars</option>
+        </select>
+    <!-- 2da FORMA de buenas practicas para generar un formulario lista para seleccionar entre opciones  -->
+        <input list="cursos2"><!-- input list: entrada de tipo lista para crear menus desplegables  -->
+        <datalist id="cursos2"><!-- id: debe tener el mismo nombre que el de list de input. NOTA: los ID's son unicos y debe ser distinto al del primer menu-->
+            <option value="JavaScript"></option>
+            <option value="HTML5"></option>
+            <option value="CSS3"></option>
+            <option value="Web Standars"></option>
+        </datalist>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+html{
+    font-size: 75%; /*Tamano del texto*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Tipo de letra*/
+}
+
+h1{
+    font-size: inherit;  /*inherit: heredar el tamano de fuente del padre mas cercano q lo tenga definido*/
+    color : red;
+}

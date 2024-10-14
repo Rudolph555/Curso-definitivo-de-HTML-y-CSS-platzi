@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="./styleBueno.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1 id="page-title" class="title">Empresa</h1> <!--Las class son genericas, se puede tener la misma clase en otros elementos y se le aplicara el mismo estilo a todos los elementos. Los id son unicos y por cada etiqueta solo se puede tener un id y no puede haber otro id en la pagina-->
+        <nav>
+            <ul id="main-nav" class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="" >Cursos</a></li> <!-- El <li>, es solo un contenedor y no tiene un área clicable visible por defecto, lo que puede hacer que parezca que el fondo no se está aplicando.
+                por eso agregar la clase al elemento <a>-->
+                <li><a href="" class="instructores">Instructores</a></li> <!--esta es una correcta practica de agregar estilos a un elemento-->
+                <li><a href="" style="background-color: orange;" class="blog">Blog</a></li><!--los estilos embebidos son una mala practica pues pesan mas q los estilos agregados a la clase en la hoja de estilos-->
+            </ul>
+        </nav>
+        <h1 class="title">Empleados</h1>
+    </header>
+</body>
+</html>

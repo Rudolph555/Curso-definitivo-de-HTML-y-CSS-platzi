@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box; /*Suma el padding y el border al largo del elemento para que se ajuste al width pero no suma el margin*/
+    padding: 0;
+    margin: 0;
+}
+main{
+    width: 100%;/*largo del elemento(contenido) sin contar el margin, el padding, ni el border*/
+    height: 500px;/*alto del elemento*/
+    border: 10px solid grey; /*borde: tamano - tipo solido - color*/
+    padding: 20px 35px; /*espacio interno o relleno: 20px de arriba a abajo - 35px de izquierda a derecha. Tambien se puede especificar con padding-left, padding-right,...*/
+}

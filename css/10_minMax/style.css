@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box; /*Suma el padding y el border al largo del elemento para que se ajuste al width pero no suma el margin*/
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100vw; /*vw ocupe el 100% de ancho del viewport (ventana grafica)*/
+    height: 100vh; /*vh ocupe el 100% de alto del viewport (ventana grafica). Sirve para el main o secciones que tengan scroll y q el estilo vaya bajando junto con el scroll*/
+    background-color: purple;
+}
+section{
+    width: 80%; /*utiliza el 80% del espacio disponible*/
+    
+    /*para min-width y max-width necesitas un width base q casi siempre es en porcentaje*/
+    min-width: 320px;   /*Si la pantalla se reduce utilizara un 80% pero el ancho se hara mas pequeno hasta 320px como minimo;*/
+    max-width: 500px; /*Si la pantalla aumenta utilizara un 80% pero el ancho se hara mas grande hasta 500px como maximo luego se vera el resto de la pantalla;*/
+    
+    /*min-height y max-height no requiere un height base*/
+    min-height: 500px; /*la altura minima q vas a tener es 500px pero si llegas a tener contenido que exceda crece con tu contenido hasta q tu contenido deje de crecer*/
+
+    /*max-height: para que no crezca mas de esta dimension en la parte de altura para controlar la parte del crecimiento del contenedor*/
+    margin: 0 auto; /*para CENTREAR: 0 significa arriba y abajo un margen de 0, y auto de derecha a izquierda*/
+    background-color: red;
+}

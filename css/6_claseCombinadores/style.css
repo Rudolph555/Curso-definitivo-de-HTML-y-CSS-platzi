@@ -1,0 +1,15 @@
+h2 + p{ 
+    color: red;
+} /* el combinador + "Hermano adyacente o cercano "significa: aplicales el color rojo a todas las etiquetas parrafo que esten cerca(en la parte inferior) de una etiqueta h2*/
+
+h2 ~ p{ 
+    color: green;
+} /* el combinador ~ "Hermano general "significa: aplicales el color verde a todas las etiquetas parrafo que tengan como hermanos generales a h2 (dentro del bloque existen parrafos en la misma linea con h2)*/
+
+div > p{ 
+    color: purple;
+} /*el combinador > significa: La etiqueta parrafo que sea hija directa de una etiqueta div agregale estos estilos*/
+
+div p{ 
+    color: blue;
+} /*el combinador descendiente significa: todas las etiquetas p que esten dentro de una etiqueta div*/

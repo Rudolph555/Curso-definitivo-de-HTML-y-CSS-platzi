@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: purple;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+/*BUENAS PRACTICAS: Es mejor llamar clases e ir en cascada para obtener una buena especificidad*/
+
+.title{
+    font-size: 18px;
+    font-family: monospace;
+}
+.nav{
+    margin-top: 10px;
+    list-style-type: none; /*quitar las vinetas como puntos de los elementos de la lista*/
+    padding-left: 0px;
+}
+.nav li{
+    display: inline-block;
+}
+.nav a{
+    color: white;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 2px; /*para curvar las esquinas de los bordes del elemento*/
+    text-decoration: none;  /*quitar la decoracion del elemento */
+}
+
+.nav .blog{ 
+    background-color: red; /*los cambios no cambian pues el estilo embebido en la etiqueta pesa mas que la clase en la hoja de estilos. Si coloco al final !important: obliga a poner primero en importancia pero no es buena practica*/
+}
+.nav .instructores{
+    background-color: red;
+}

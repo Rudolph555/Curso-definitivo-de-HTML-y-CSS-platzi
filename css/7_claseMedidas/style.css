@@ -1,0 +1,8 @@
+main{
+    background-color: red;
+    width: 100%;    /*Para  width recomendable usar en porcentaje para q se acomode a la pantalla i.e. un widht absoluto*/
+    height: 500px;  /*En px no cambia por lo tanto en una pantalla grande podria generar espacios en blnco y en una pantalla pequena generaria scroll*/
+}
+p{
+    font-size: 16px;    /*tamano de la fuente en pixeles es una medida absoluta, no va a variar sin importar el tamano de la pantalla. En porcentaje ej: 50% tomaria el porcentaje del valor padre q por defecto seria el de html del navegador que seria igual a la mitad de 16px*/
+}
