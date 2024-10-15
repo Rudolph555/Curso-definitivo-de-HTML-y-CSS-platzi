@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+.container{
+    border: .3rem solid black;
+    display: flex; /*Display flex nos ayuda a poder hacer un layout mas flexible, y permite que cada uno de sus hijos pueda coexistir lado a lado*/
+    flex-direction: row; /*viene por defecto para ordenarlos en filas, se puede modificar a flex-direction: column (para volver en columnas)
+    flex-direction: row-reverse (va del 1 al ultimo desde la izquierda)
+    flex-direction: column-reverse (lo voltea del ultimo al primero de arriba a abajo)*/
+
+    flex-wrap: wrap; /*Permite que cuando el navegador se va achicando y los elementos ya no tienen espacio, se van a acomodar a la siguiente fila de forma automatica y va a crecer el contenedor de manera automática, y ya no me preocupo si el contenedor tiene un porcentaje de altura o una dimension, eso lo decide el tamaño del contenido, tambien se modifica a:
+    flex-wrap: wrap-reverse (empieza del ultimo)*/
+
+    justify-content: center; /*Nos ayuda a alinear el contenido de forma horizontal tiene otras opciones:
+    justify-content: flex-end (todo a la derecha)
+    justify-content: flex-start (por default viene esto todo a la izquierda);
+    justify-content: space-around (si tengo un espacio al final y quiero repartir el espacio entre los elementos, pero los espacios no son perfectos)
+    justify-content: space-evenly (con esto me aseguro q el espacio q se va a proporcionar va a ser el mismo desde las orillas hasta entre cada uno de los contenedores, el espacio se calcula de manera automática)
+    justify-content: space-between;  Espacia el logo y la lista en los extremos */
+    
+    height: 50vh;
+    align-items: center; /*propiedad de flexbox que alinea de forma vertical en el centro, sin importar el tamaño del contenedor o la pantalla, tiene las opciones:
+    align-items: flex-start (lo pone en la parte de arriba)
+    align-items: flex-end (lo pone en la parte de abajo del contenedor)
+    align-items: stretch (si los elementos (.box en este caso) no tienen el height definido se alarga al tamaño height del contecedor pader)
+    align-items: baseline (si no definimos el height del elemento toma el espacio(height) de su contenido)*/
+
+    
+}
+.box{
+    /*width: 10rem;*/
+    height: 10rem;
+    flex-basis: 10rem; /*establece el tamaño base de un elemento flexible (dentro de un contenedor con display: flex). En este caso, el ancho o alto inicial del elemento será de 10 rem*/
+    flex: grow 1; /*significa que el elemento puede crecer para ocupar espacio adicional en un contenedor flexible (display: flex), si hay espacio disponible. El valor "1" indica que el elemento puede crecer proporcionalmente en relación a otros elementos que también tengan la propiedad flex-grow configurada.*/
+
+}
+.box1{
+    background-color: blue;
+    order: 1; /*Permite ordenar segun nuestro criterio*/
+    flex-grow: 1; /* Ayuda a ocupar el espacio que restaba para llenar el 100% del widht,pero si la pantalla se hace mas chica tmb se achica el .box hasta que llegue a su tamaño original */
+}
+.box2{
+    background-color: blueviolet;
+    order: 3;
+    flex-grow: 1;/*pero si va creciendo el navegador estos que estan con esta propiedad tmb creceran rellenando el espacio*/
+}
+.box3{
+    background-color: burlywood; 
+    /*Todos los que no tengan un order se pasan a la izquierda y los que tengan un order inician de la derecha continuando hacia la derecha */
+}
+.box4{
+    background-color: cadetblue;
+}
+.box5{
+    background-color: coral;
+    order: 4;
+}
+.box6{
+    background-color: salmon;
+    order: 2;
+}
