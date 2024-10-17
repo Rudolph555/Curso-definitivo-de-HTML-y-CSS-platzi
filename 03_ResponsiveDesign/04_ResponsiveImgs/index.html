@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Imagenes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <!--Malas practicas:-->
+        <div class="picture">
+            <img src="./imgs/large.jpg" alt="">
+        </div>
+
+        <!--Buenas prácticas-->
+        <!--Con el contenedor picture y la etiqueta source podemos decir al navegador que elija que imagen va a descargar segun el viewport del dispositivo desde el que se esta accediendo dandole el tamaño adecuado al dispositivo-->
+        <picture>
+            <source media = "(min-width:1000px)" srcset="./imgs/large.jpg"><!--El mas grande arriba-->
+            <source media = "(min-width:800px)" srcset="./imgs/medium.jpg"><!--Luego el mediano-->
+            <img src="./imgs/small.jpg" alt="Es una imágen de ejemplo"><!--Al final el mas pequeño-->
+        </picture>
+    </main>
+</body>
+</html>

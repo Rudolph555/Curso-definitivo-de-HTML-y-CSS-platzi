@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  /*Para usar display flex lo que siempre necesitamos de inicio es un contenedor principal que lleve el display flex para empezar a manipular su contenido*/
+  display: flex;
+  flex-wrap: wrap; /*para que el contenido pueda repocicionarse cuando su tamaño lo permita*/
+}
+.c1,
+.c2,
+.c3,
+.c4,
+.c5 {
+  /*asi definimos estilos para varios componentes*/
+  width: 100%; /*con un width del 100% todos los elementos estaran ocupando todo el ancho*/
+  min-width: 150px; /*se achica hasta un ancho minimo*/
+  height: 150px;
+}
+.c1 {
+  background-color: #003476;
+}
+.c2 {
+  background-color: #0062d2;
+}
+.c3 {
+  background-color: #b4d2f7;
+}
+.c4 {
+  background-color: #d5dfef;
+}
+.c5 {
+  background-color: #dfe1e5;
+}
+
+/*1ra Opcion: Si vamos a trabajar con MEDIA QUERYS en el único style.css entonces por buenas practicas siempre deben ir hasta abajo, para empezar a marcar donde existen los BREAK POINTS y cuales son los cambios por cada BreakPoint(punto de interrupción)*/
+
+/*hasta AQUÍ 600px se aplicara todo lo de arriba, cuando el viewport(ventana grafica) supere los 600px se aplicara el siguiente Media Query: */
+/* @media (min-width: 600px) {
+  
+  .c2,
+  .c3,
+  .c4 {
+    width: 50%;
+  }
+} */
+
+/* @media (min-width: 800px) {
+  .container{
+    width: 800px;   
+    margin-left: auto;  
+    margin-right: auto;
+  }
+  .c1 {
+    width: 60%;
+  }
+  .c2 {
+    width: 40%;
+  }
+  .c3,
+  .c4 {
+    width: 33%;
+  }
+  .c5 {
+    width: 34%;
+  }
+} */

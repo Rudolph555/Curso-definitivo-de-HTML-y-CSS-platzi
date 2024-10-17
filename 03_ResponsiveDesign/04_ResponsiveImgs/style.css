@@ -1,0 +1,7 @@
+.picture{
+    width: 500px;
+    height: 400px;
+}
+img{
+    width: 100%;    /*En imagenes el width: 100% es buena practica pues se va a adaptar 100% al tamaño del padre*/
+}

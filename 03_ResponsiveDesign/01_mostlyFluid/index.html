@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patron de diseño Mostly Fluid</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--Cuando trabajamos con media querys podriamos tener diferentes archivos aqui pero el archivo de style.css va a tener todo el codigo que vamos a utilizar para construir nuestra vista desde movile y esto se va a cargar; pero cuando tengamos un pixelaje distinto o un view port distinto vamos a cargar otro css-->
+
+    <!--2da Opcion (mejor práctica para carga rapida) en el head y separados los css por break point:-->
+    <link rel="stylesheet" href="table.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 800px)">
+</head>
+
+<!--Este patron de diseño puede servir donde el c1 sea el header y el c5 el footer-->
+<body>
+    <main class="container">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="c5"></div>
+    </main>
+</body>
+
+</html>

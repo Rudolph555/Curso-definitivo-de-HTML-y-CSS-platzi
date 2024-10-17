@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos Label-Alt-Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <label for="name">
+                <!--El label ayuda a la accesibilidad pues en el navegador al hacer clic o posicionarse encima del label (¿Cual es tu nombre?) automaticamente el cursor se posiciona en el espacio para escribir-->
+                <span>¿Cual es tu nombre?</span>
+                <input id="name" type="text">
+            </label>
+            <label for="staeted-studying">
+                <span>¿Que día comenzaste a estudiar?</span>
+                <input id="staeted-studying" type="date">
+            </label>
+            <label for="time-to-study">
+                <span>¿En que horario estudias?</span>
+                <input id="time-to-study" type="time">
+            </label>
+        </form>
+
+        <section>
+            <!--Al no ser responsive puedo utilizar solo la etiqueta img sin el picture-->
+            <img src="./panda-introspectiveds.jpg"
+                alt="Es una persona sentada en la calle con botellas de alcohol en la mano y una mascara de un panda"
+                title="Es una foto de una persona con mascara de panda">
+            <!--alt nos ayuda a q al momento que los softwares que ayudan a leer pantallas que se llaman (screen readers) puedan leer la despcripción de la imagen, para personas con problemas visuales, por ejemplo en un ecommerce no podra ver los productos. 
+            Tambien ayuda que cuando la imagen no carga o se rompe el link, se muestra el texto que definimos en alt-->
+            <!--title nos muestra un modal del texto cuando nos posicionamos encima de la imagen, esto puede ayudar sobre todo si queremos quremos apretar un hipervinculo para poder ver a donde nos va a llevar ese hipervinculo con una pequeña descripción de lo que esta pasando-->
+        </section>
+    </main>
+</body>
+
+</html>

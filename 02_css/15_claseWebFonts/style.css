@@ -1,0 +1,13 @@
+h1{
+    font-family: "Poppins", sans-serif; /*Si solo agrego esta linea al ser h1 tomara automaticamente el tamaño más grande de los que importe*/
+}
+article{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;   /*Puedo modificar el tamaño exacto*/
+    font-style: normal; /*y también el estilo eligiendo de los que importe*/
+}
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}

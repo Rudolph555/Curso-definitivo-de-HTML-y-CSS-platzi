@@ -1,0 +1,18 @@
+.container {
+  width: 800px; /*Para que solo crezca hasta 800px, lo definimos así en el contenedor principal*/
+  margin-left: auto;
+  margin-right: auto;
+}
+.c1 {
+  width: 60%;
+}
+.c2 {
+  width: 40%;
+}
+.c3,
+.c4 {
+  width: 33%;
+}
+.c5 {
+  width: 34%;
+}
